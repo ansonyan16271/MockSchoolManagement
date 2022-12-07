@@ -16,7 +16,7 @@ namespace MockSchoolManagement.Controllers
 
         public IActionResult Index()
         {
-            ViewData["key"] = _configuration["MyKey"];
+            
             return View();
         }
 
