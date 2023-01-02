@@ -1,7 +1,7 @@
-﻿@{
+﻿@*@{
     ViewData["Title"] = "Home Page";
     var processName = System.Diagnostics.Process.GetCurrentProcess().ProcessName;
-    
+
 }
 
 <div class="text-center">
@@ -10,5 +10,69 @@
     <p>@processName</p>
     <hr />
     <p>key=@ViewData["key"]</p>
+    <hr />
+    <p>Host Environment=@ViewData["environmentName"]</p>
+</div>*@
 
+@*@model IEnumerable<MockSchoolManagement.Models.Student>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>学生页面详情</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>名字</th>
+                    <th>主修科目</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach(var student in Model)
+            {
+                <tr>
+                    <td>@student.Id</td>
+                    <td>@student.Name</td>
+                    <td>@student.Major</td>
+                </tr>
+
+            }
+            </tbody>
+        </table>
+    </body>
+</html>*@
+@model IEnumerable<Student>
+
+@{
+    ViewBag.Title = "学生列表页面";
+}
+
+<div class="row">
+    @foreach (var student in Model)
+    {
+        string photoPath = "~/images/noimage.png";
+        if (student.PhotoPath != null)
+        {
+            photoPath = "~/images/avatars/" + student.PhotoPath;
+        }
+        <div class="col col-sm-3 m-1">
+            <div class="card-header">
+                <h3 class="card-title">@student.Name</h3>
+            </div>
+            <img class="card-img-top imageThumbnail" src="@photoPath" asp-append-version="true" />
+
+            <div class="card-body text-center">
+                <h5 class="card-title">主修科目：@student.Major.GetDisplayName()</h5>
+            </div>
+
+            <div class="card-footer text-center">
+                <a asp-controller="home" asp-action="details" asp-route-id="@student.Id" class="btn btn-success m-1">查看</a>
+                <a asp-controller="home" asp-action="edit" asp-route-id="@student.Id" class="btn btn-primary m-1">编辑</a>
+                <a href="#" class="btn btn-danger m-1">删除</a>
+            </div>
+        </div>
+    }
 </div>
+

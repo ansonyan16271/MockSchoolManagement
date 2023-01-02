@@ -1,0 +1,12 @@
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\bin\Debug\net7.0\MockSchoolManagement.Domain.deps.json
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\bin\Debug\net7.0\MockSchoolManagement.Domain.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\bin\Debug\net7.0\MockSchoolManagement.Domain.pdb
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.csproj.AssemblyReference.cache
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.AssemblyInfoInputs.cache
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.AssemblyInfo.cs
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.csproj.CoreCompileInputs.cache
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\refint\MockSchoolManagement.Domain.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\MockSchoolManagement.Domain.pdb
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Domain\obj\Debug\net7.0\ref\MockSchoolManagement.Domain.dll

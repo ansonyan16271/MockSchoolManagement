@@ -1,0 +1,12 @@
+﻿@model int
+@{
+    ViewBag.Title = "404错误";
+}
+
+<div class="alert alert-danger m-1 mb-1">
+    <h4>Not Found错误:</h4>
+    <hr />
+    <h5>查询不到学生ID为 @Model 的信息。</h5>
+</div>
+
+<a asp-controller="home" asp-action="index" class="btn btn-outline-success" style="width:auto">单击此处查看学生信息列表</a>

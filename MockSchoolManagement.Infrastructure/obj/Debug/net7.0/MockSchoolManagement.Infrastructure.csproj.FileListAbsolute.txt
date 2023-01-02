@@ -1,0 +1,12 @@
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\bin\Debug\net7.0\MockSchoolManagement.Infrastructure.deps.json
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\bin\Debug\net7.0\MockSchoolManagement.Infrastructure.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\bin\Debug\net7.0\MockSchoolManagement.Infrastructure.pdb
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.csproj.AssemblyReference.cache
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.AssemblyInfoInputs.cache
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.AssemblyInfo.cs
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\refint\MockSchoolManagement.Infrastructure.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\MockSchoolManagement.Infrastructure.pdb
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement.Infrastructure\obj\Debug\net7.0\ref\MockSchoolManagement.Infrastructure.dll

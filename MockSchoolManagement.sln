@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockSchoolManagement", "MockSchoolManagement\MockSchoolManagement.csproj", "{5E59E344-27A2-4473-B62C-33A0AB0A7EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockSchoolManagement", "MockSchoolManagement\MockSchoolManagement.csproj", "{5E59E344-27A2-4473-B62C-33A0AB0A7EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockSchoolManagement.Bll", "MockSchoolManagement.Bll\MockSchoolManagement.Bll.csproj", "{583A045D-718E-44D0-9E14-DB6BC81C3D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockSchoolManagement.Dal", "MockSchoolManagement.Dal\MockSchoolManagement.Dal.csproj", "{51640ECA-6DF3-48CD-AF08-A911F73A14A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockSchoolManagement.Application", "MockSchoolManagement.Application\MockSchoolManagement.Application.csproj", "{DE02D418-2CE6-4A1A-A36A-0592B57CD0EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockSchoolManagement.Domain", "MockSchoolManagement.Domain\MockSchoolManagement.Domain.csproj", "{BC5E1985-27FA-496A-83B3-661A09B5EFB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockSchoolManagement.Infrastructure", "MockSchoolManagement.Infrastructure\MockSchoolManagement.Infrastructure.csproj", "{B784918D-5738-4A14-8CE4-44935A6B3537}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{5E59E344-27A2-4473-B62C-33A0AB0A7EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E59E344-27A2-4473-B62C-33A0AB0A7EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E59E344-27A2-4473-B62C-33A0AB0A7EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583A045D-718E-44D0-9E14-DB6BC81C3D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583A045D-718E-44D0-9E14-DB6BC81C3D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583A045D-718E-44D0-9E14-DB6BC81C3D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583A045D-718E-44D0-9E14-DB6BC81C3D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51640ECA-6DF3-48CD-AF08-A911F73A14A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51640ECA-6DF3-48CD-AF08-A911F73A14A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51640ECA-6DF3-48CD-AF08-A911F73A14A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51640ECA-6DF3-48CD-AF08-A911F73A14A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE02D418-2CE6-4A1A-A36A-0592B57CD0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE02D418-2CE6-4A1A-A36A-0592B57CD0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE02D418-2CE6-4A1A-A36A-0592B57CD0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE02D418-2CE6-4A1A-A36A-0592B57CD0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC5E1985-27FA-496A-83B3-661A09B5EFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5E1985-27FA-496A-83B3-661A09B5EFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5E1985-27FA-496A-83B3-661A09B5EFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5E1985-27FA-496A-83B3-661A09B5EFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B784918D-5738-4A14-8CE4-44935A6B3537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B784918D-5738-4A14-8CE4-44935A6B3537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B784918D-5738-4A14-8CE4-44935A6B3537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B784918D-5738-4A14-8CE4-44935A6B3537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

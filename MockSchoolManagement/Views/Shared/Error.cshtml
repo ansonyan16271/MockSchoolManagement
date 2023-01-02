@@ -1,4 +1,4 @@
-﻿@model ErrorViewModel
+﻿@*@model ErrorViewModel
 @{
     ViewData["Title"] = "Error";
 }
@@ -22,4 +22,26 @@
     It can result in displaying sensitive information from exceptions to end users.
     For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
     and restarting the app.
-</p>
+</p>*@
+
+<h3>
+    程序请求时发生了一个内部错误，我们会反馈给团队，我们正在努力解决这个问题。
+</h3>
+<h5>请通过 ltm@ddxc.org 与我们取得联系</h5>
+<hr />
+<h3>错误信息：</h3>
+<div class="alert alert-danger">
+    <h5>异常路径：</h5>
+    <hr />
+    <p>@ViewBag.ExceptionPath</p>
+</div>
+<div class="alert alert-danger">
+    <h5>异常信息：</h5>
+    <hr />
+    <p>@ViewBag.ExceptionMessage</p>
+</div>
+<div class="alert alert-danger">
+    <h5>异常堆栈跟踪：</h5>
+    <hr />
+    <p>@ViewBag.StackTrace</p>
+</div>
