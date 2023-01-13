@@ -1,0 +1,3 @@
+2023-01-05 17:24:56.6858|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-05 17:24:56.7083|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-05 17:24:56.7083|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 

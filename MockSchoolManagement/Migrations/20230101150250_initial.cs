@@ -7,7 +7,7 @@
 namespace MockSchoolManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class initialDate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

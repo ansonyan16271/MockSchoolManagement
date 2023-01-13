@@ -1,0 +1,97 @@
+2023-01-13 15:00:11.0638|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:00:11.1410|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:00:11.1410|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:00:25.2834|MockSchoolManagement.Controllers.ErrorController|WARN|发生了一个404错误，路径=/Admin/EditRole/c3fd87e7-5c33-447f-bbcd-5e3e190c8516以及查询字符串= 
+2023-01-13 15:00:30.0472|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:00:30.0472|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:00:30.0669|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:40:48.3572|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:40:48.3731|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:40:48.3889|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:41:09.8407|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at AspNetCoreGeneratedDocument.Views_Admin_EditRole.<ExecuteAsync>b__20_0() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Views\Admin\EditRole.cshtml:line 36
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Admin_EditRole.ExecuteAsync() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Views\Admin\EditRole.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-13 15:41:10.2247|MockSchoolManagement.Controllers.HomeController|ERROR|路径 /Admin/EditRole/c3fd87e7-5c33-447f-bbcd-5e3e190c8516 产生了一个错误System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at AspNetCoreGeneratedDocument.Views_Admin_EditRole.<ExecuteAsync>b__20_0() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Views\Admin\EditRole.cshtml:line 36
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Admin_EditRole.ExecuteAsync() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Views\Admin\EditRole.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task) 
+2023-01-13 15:44:12.5660|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:44:12.5660|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:44:12.5840|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:44:42.7862|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:44:42.8498|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:44:42.8686|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:45:20.2260|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:45:20.2351|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:45:20.2351|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:47:39.2393|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:47:39.2393|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:47:39.2583|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 15:48:12.8438|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 15:48:12.8438|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 15:48:12.8615|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 16:01:12.5842|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 16:01:12.6022|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 16:01:12.6126|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-13 17:21:29.9617|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-13 17:21:30.0430|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-13 17:21:30.0507|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 

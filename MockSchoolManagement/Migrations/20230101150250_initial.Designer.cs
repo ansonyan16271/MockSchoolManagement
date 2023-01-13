@@ -12,7 +12,7 @@ namespace MockSchoolManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20230101150250_initial")]
-    partial class initial
+    partial class initialDate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

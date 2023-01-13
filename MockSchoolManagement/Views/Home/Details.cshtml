@@ -20,6 +20,7 @@
                 <h4>学生ID:@Model.Student.Id</h4>
                 <h4>邮箱:@Model.Student.Email</h4>
                 <h4>主修科目:@Model.Student.Major.GetDisplayName()</h4>
+                @*<h4>主修科目:@Html.DisplayNameFor(c=>c.Student.Major)</h4>*@
             </div>
             <div class="card-footer text-center">
                 <a asp-controller="home" asp-action="index" class=" btn btn-primary">返回</a>

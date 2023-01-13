@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MockSchoolManagement.Models;
 
 namespace MockSchoolManagement.Infrastructure
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<ApplicationUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) 
             : base(options)
@@ -13,6 +14,7 @@ namespace MockSchoolManagement.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Seed();
         }
     }

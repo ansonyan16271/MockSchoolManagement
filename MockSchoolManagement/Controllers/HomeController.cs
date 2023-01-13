@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MockSchoolManagement.DataRepositories;
 using MockSchoolManagement.Models;
@@ -8,6 +9,7 @@ using System.Reflection;
 
 namespace MockSchoolManagement.Controllers
 {
+    //[Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -36,6 +38,7 @@ namespace MockSchoolManagement.Controllers
         //[Route("")]
         //[Route("Home")]
         //[Route("Home/Index")]
+        
         public IActionResult Index()
         {
             IEnumerable<Student> model = _studentRepository.GetAllStudents();
@@ -54,6 +57,13 @@ namespace MockSchoolManagement.Controllers
         //}
         public ViewResult Details(int id)
         {
+            _logger.LogTrace("Trace(跟踪) Log");
+            _logger.LogDebug("Debug(调试) Log");
+            _logger.LogInformation("信息(Information) Log");
+            _logger.LogWarning("警告(Warning) Log");
+            _logger.LogError("错误(Error) Log");
+            _logger.LogCritical("严重(Critical) Log");
+            
             var student = _studentRepository.GetStudentById(id);
             //throw new Exception("在Details视图中抛出异常！");
             //判断学生信息是否存在
@@ -186,8 +196,8 @@ namespace MockSchoolManagement.Controllers
             }
             return uniqueFileName;
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [Route("/Home/Error")]
+        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
@@ -196,12 +206,12 @@ namespace MockSchoolManagement.Controllers
             var exceptionHandlerPathFeature =
                     HttpContext.Features.Get<IExceptionHandlerPathFeature>();
 
-            ViewBag.ExceptionPath = exceptionHandlerPathFeature.Path;
-            ViewBag.ExceptionMessage = exceptionHandlerPathFeature.Error.Message;
-            ViewBag.StackTrace = exceptionHandlerPathFeature.Error.StackTrace;
+            //ViewBag.ExceptionPath = exceptionHandlerPathFeature.Path;
+            //ViewBag.ExceptionMessage = exceptionHandlerPathFeature.Error.Message;
+            //ViewBag.StackTrace = exceptionHandlerPathFeature.Error.StackTrace;
             //LogError() 方法将异常记录作为日志中的错误类别记录
-            //logger.LogError($"路径 {exceptionHandlerPathFeature.Path} " +
-            //    $"产生了一个错误{exceptionHandlerPathFeature.Error}");
+            _logger.LogError($"路径 {exceptionHandlerPathFeature.Path} " +
+                $"产生了一个错误{exceptionHandlerPathFeature.Error}");
             return View("Error");
         }
     }

@@ -9,6 +9,6 @@
         /// <summary>
         /// 已经存在数据库中的图片文件路径
         /// </summary>
-        public string ExistingPhotoPath { get; set; }
+        public string? ExistingPhotoPath { get; set; }
     }
 }

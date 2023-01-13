@@ -1,0 +1,41 @@
+2023-01-05 17:24:56.4517|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|INFO|User profile is available. Using 'C:\Users\anson\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-01-05 17:24:56.5023|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2023-01-05 17:24:56.5023|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2023-01-05 17:24:56.5023|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/ - - 
+2023-01-05 17:24:56.5023|Microsoft.Hosting.Lifetime|INFO|Content root path: E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement 
+2023-01-05 17:24:56.6076|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-05 17:24:56.6076|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-05 17:24:56.6858|MockSchoolManagement.DataRepositories.SQLStudentRepository|INFO|学生信息 信息(Information) Log 
+2023-01-05 17:24:56.6858|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-05 17:24:56.7083|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-05 17:24:56.7083|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-05 17:24:56.7176|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2023-01-05 17:24:57.3744|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s] 
+2023-01-05 17:24:57.5314|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 818.6262ms. 
+2023-01-05 17:24:57.5314|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) in 915.7133ms 
+2023-01-05 17:24:57.5314|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-05 17:24:57.5441|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/ - - - 200 - text/html;+charset=utf-8 1054.6420ms 
+2023-01-05 17:24:57.6005|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/lib/bootstrap/css/bootstrap.css - - 
+2023-01-05 17:24:57.6005|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/css/bootstrap.css was not modified 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/css/site.css?v=ARtyBbAzeUOzMsNdXZ6XQFDwa6AnbamVitOvDq-jW4w - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/MockSchoolManagement.styles.css?v=PjATaM4Eo76Np-LRxt6kFa1HCcTOr1AiwSntM6jfHYM - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/lib/bootstrap/css/bootstrap.css - - - 304 - text/css 6.5715ms 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /css/site.css was not modified 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /MockSchoolManagement.styles.css was not modified 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/css/site.css?v=ARtyBbAzeUOzMsNdXZ6XQFDwa6AnbamVitOvDq-jW4w - - - 304 - text/css 7.0027ms 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/MockSchoolManagement.styles.css?v=PjATaM4Eo76Np-LRxt6kFa1HCcTOr1AiwSntM6jfHYM - - - 304 - text/css 7.3365ms 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/lib/jquery/jquery.min.js - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/lib/bootstrap/js/bootstrap.bundle.min.js - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/jquery/jquery.min.js was not modified 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /lib/bootstrap/js/bootstrap.bundle.min.js was not modified 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /js/site.js was not modified 
+2023-01-05 17:24:57.6067|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 3.6029ms 
+2023-01-05 17:24:57.6234|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/lib/jquery/jquery.min.js - - - 304 - text/javascript 6.5227ms 
+2023-01-05 17:24:57.6234|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/lib/bootstrap/js/bootstrap.bundle.min.js - - - 304 - text/javascript 6.3722ms 
+2023-01-05 17:24:57.6234|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - text/javascript 7.7857ms 
+2023-01-05 17:24:57.6761|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2701ms 

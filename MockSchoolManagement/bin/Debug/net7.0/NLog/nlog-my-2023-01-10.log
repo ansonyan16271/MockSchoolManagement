@@ -1,0 +1,323 @@
+2023-01-10 12:29:42.9640|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:29:51.5306|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:29:54.7440|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:29:56.9357|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:30:36.1817|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:31:42.9350|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:31:47.5445|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:32:04.4830|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: If the 'NoStore' property is not set to true, 'Duration' property must be specified.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-01-10 12:34:28.8003|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 12:34:28.8122|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 12:34:28.8228|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 12:35:08.8538|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 12:35:08.8538|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 12:35:08.8794|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 12:35:20.3077|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 12:35:20.3077|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 12:35:20.3244|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 12:35:36.0122|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 12:35:36.0328|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 12:35:36.0414|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 17:49:09.1665|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 17:49:09.1830|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 17:49:09.1993|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 17:50:36.5412|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 17:50:36.5412|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 17:50:36.5610|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 17:51:27.7013|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 17:51:27.7155|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 17:51:27.7155|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 17:52:40.2365|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 17:52:40.2469|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 17:52:40.2469|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 18:24:47.2282|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 18:24:47.2468|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 18:24:47.2468|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 18:24:51.2212|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 18:24:51.2318|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 18:24:51.2437|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 18:24:54.3373|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 18:24:54.3574|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 18:24:54.3574|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 18:24:57.1253|MockSchoolManagement.Controllers.HomeController|WARN|警告(Warning) Log 
+2023-01-10 18:24:57.1356|MockSchoolManagement.Controllers.HomeController|ERROR|错误(Error) Log 
+2023-01-10 18:24:57.1356|MockSchoolManagement.Controllers.HomeController|FATAL|严重(Critical) Log 
+2023-01-10 18:30:32.9495|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 18:30:32.9685|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 18:30:32.9962|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 18:42:50.2476|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 18:42:50.2596|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 18:42:50.2596|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 18:48:17.8232|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 18:48:17.8423|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 18:48:17.8423|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:27:30.0004|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:27:30.0096|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:27:30.0096|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:28:41.5446|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:28:41.5629|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:28:41.5719|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:29:06.9366|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:29:06.9563|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:29:06.9667|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:29:49.9026|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:29:49.9219|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:29:49.9312|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:30:07.9347|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:30:07.9347|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:30:07.9547|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:30:55.2182|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:30:55.2284|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:30:55.2284|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:31:09.2184|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:31:09.2284|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:31:09.2284|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:31:40.3229|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:31:40.3407|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:31:40.3407|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:32:44.4150|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:32:44.4150|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:32:44.4337|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:33:01.3207|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:33:01.3382|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:33:01.3382|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:33:03.6068|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:33:03.6068|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:33:03.6269|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:33:15.4458|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:33:15.4458|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:33:15.4637|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:33:56.6420|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:33:56.6512|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:33:56.6512|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 19:34:18.7792|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 19:34:18.7792|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 19:34:18.7973|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 22:44:34.7326|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 22:44:34.7487|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 22:44:34.7642|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:37:49.8136|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:37:49.8249|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:37:49.8249|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:38:17.9420|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:38:17.9560|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:38:17.9665|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:39:06.1551|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:39:06.1646|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:39:06.1646|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:39:57.9806|Microsoft.AspNetCore.Identity.RoleManager|WARN|Role 079f3dc4-752c-4cfd-955f-24afac92ec88 validation failed: DuplicateRoleName. 
+2023-01-10 23:41:46.4073|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:41:46.4163|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:41:46.4163|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:42:05.1047|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:42:05.1233|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:42:05.1233|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:42:55.3426|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:42:55.3604|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:42:55.3697|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:43:02.8719|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:43:02.8940|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:43:02.9038|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:43:22.1544|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:43:22.1544|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:43:22.1736|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:44:54.0404|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:44:54.0404|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:44:54.0601|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:45:10.5746|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:45:10.5746|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:45:10.5951|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:47:01.8718|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:47:01.8931|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:47:01.9033|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:47:57.4478|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:47:57.4672|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:47:57.4672|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:48:46.5573|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:48:46.5573|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:48:46.5759|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:50:28.2324|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:50:28.2542|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:50:28.2703|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:51:33.5900|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:51:33.5900|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:51:33.6087|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:52:16.4817|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:52:16.5017|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:52:16.5117|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:54:41.9546|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:54:41.9651|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:54:41.9651|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:55:40.1683|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:55:40.1881|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:55:40.1974|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:56:08.3074|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:56:08.3074|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:56:08.3268|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:56:29.0812|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:56:29.0938|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:56:29.1030|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:56:31.6399|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:56:31.6518|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:56:31.6518|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:57:04.8686|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:57:04.8686|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:57:04.8875|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-10 23:57:08.2763|MockSchoolManagement.Controllers.HomeController|WARN|警告(Warning) Log 
+2023-01-10 23:57:08.2942|MockSchoolManagement.Controllers.HomeController|ERROR|错误(Error) Log 
+2023-01-10 23:57:08.2942|MockSchoolManagement.Controllers.HomeController|FATAL|严重(Critical) Log 
+2023-01-10 23:57:10.6543|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-10 23:57:10.6543|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-10 23:57:10.6726|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 

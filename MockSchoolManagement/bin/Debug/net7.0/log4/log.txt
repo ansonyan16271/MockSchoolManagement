@@ -1,0 +1,14 @@
+2023-01-03 20:06:49,265 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2023-01-03 20:06:49,406 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2023-01-03 20:06:49,417 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement
+2023-01-03 20:06:50,006 [.NET ThreadPool Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+2023-01-03 20:06:52,095 [.NET ThreadPool Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0
+2023-01-03 20:06:55,474 [.NET ThreadPool Worker] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0

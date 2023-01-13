@@ -1,8 +1,14 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns;
+using MockSchoolManagement.CustomerMiddlewares;
 using MockSchoolManagement.DataRepositories;
 using MockSchoolManagement.Infrastructure;
+using MockSchoolManagement.Models;
+using NLog.Web;
 
 namespace MockSchoolManagement
 {
@@ -10,7 +16,7 @@ namespace MockSchoolManagement
     {
         public static void Main(string[] args)
         {
-            
+
 
             var builder = WebApplication.CreateBuilder(args);
 
@@ -18,11 +24,50 @@ namespace MockSchoolManagement
             options.UseSqlServer(builder.Configuration["ConnectionStrings:MockStudentDBConnection"]));
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews()
+            builder.Services.AddControllersWithViews(config=>
+            {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            })
                 .AddXmlSerializerFormatters();
             //builder.Services.AddScoped<IStudentRepository,MockStudentRepository>();
-            builder.Services.AddScoped<IStudentRepository,SQLStudentRepository>();
-            
+            builder.Services.AddScoped<IStudentRepository, SQLStudentRepository>();
+
+            #region Identity注册
+            builder.Services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 3;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+
+            });
+            //builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            //{
+            //    options.Password.RequiredLength = 6;
+            //    options.Password.RequiredUniqueChars = 3;
+            //    options.Password.RequireNonAlphanumeric = false;
+            //    options.Password.RequireLowercase = false;
+            //    options.Password.RequireUppercase = false;
+            //})
+            //    .AddEntityFrameworkStores<AppDbContext>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddErrorDescriber<CustomIdentityErrorDescriber>()
+               .AddEntityFrameworkStores<AppDbContext>();
+            #endregion
+
+            #region NLog log4net日志
+
+            builder.Logging.ClearProviders();
+            builder.Logging.AddNLog("CfgFile/NLog.config");
+
+            //Nuget引入：
+            //1.Log4Net
+            //2.Microsoft.Extensions.Logging.Log4Net.AspNetCore
+            //builder.Logging.AddLog4Net("CfgFile/log4net.Config");
+            #endregion
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -52,10 +97,10 @@ namespace MockSchoolManagement
 
             app.UseStaticFiles();
 
-            app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseRouting();
 
             app.MapControllerRoute(
                 name: "default",
