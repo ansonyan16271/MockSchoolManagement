@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G3jNULRleiV9HOZ5wTaaEypN+d+UnH8kPE/igNMowfU=",
+  "Hash": "GPtuHrGdV7W8D3/Alg1RdCrZyREXiZgcQtW9LgdLoVw=",
   "Source": "MockSchoolManagement",
   "BasePath": "_content/MockSchoolManagement",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\avatars\\a105ff67-f40e-4c3e-a1eb-144fa462fd43_man1.png"
+    },
+    {
+      "Identity": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement\\wwwroot\\images\\avatars\\cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png",
+      "SourceId": "MockSchoolManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement\\wwwroot\\",
+      "BasePath": "_content/MockSchoolManagement",
+      "RelativePath": "images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatars\\cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png"
     },
     {
       "Identity": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement\\wwwroot\\images\\image1.png",

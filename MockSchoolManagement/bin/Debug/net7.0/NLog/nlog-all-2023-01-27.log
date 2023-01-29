@@ -1,0 +1,247 @@
+2023-01-27 16:55:33.6294|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|INFO|User profile is available. Using 'C:\Users\anson\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-01-27 16:55:33.8493|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2023-01-27 16:55:33.8493|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2023-01-27 16:55:33.8684|Microsoft.Hosting.Lifetime|INFO|Content root path: E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement 
+2023-01-27 16:55:33.8808|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/ - - 
+2023-01-27 16:55:34.0569|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:55:34.0770|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:55:34.1585|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|INFO|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-01-27 16:55:34.1748|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'. 
+2023-01-27 16:55:34.1748|Microsoft.AspNetCore.Mvc.ChallengeResult|INFO|Executing ChallengeResult with authentication schemes (). 
+2023-01-27 16:55:34.2088|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|INFO|AuthenticationScheme: Identity.Application was challenged. 
+2023-01-27 16:55:34.2227|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) in 68.2879ms 
+2023-01-27 16:55:34.2368|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:55:34.2608|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/Account/Login?ReturnUrl=%2F - - 
+2023-01-27 16:55:34.2608|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/ - - - 302 - - 371.3679ms 
+2023-01-27 16:55:34.3343|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:55:34.3343|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MockSchoolManagement.Controllers.AccountController (MockSchoolManagement). 
+2023-01-27 16:55:34.5963|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:55:34.6124|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7752ms. 
+2023-01-27 16:55:34.6446|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Login. 
+2023-01-27 16:55:35.1588|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Login executed in 532.1383ms. 
+2023-01-27 16:55:35.1829|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) in 794.9076ms 
+2023-01-27 16:55:35.2022|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:55:35.3108|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1049.9274ms 
+2023-01-27 16:55:35.3497|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/MockSchoolManagement.styles.css?v=PjATaM4Eo76Np-LRxt6kFa1HCcTOr1AiwSntM6jfHYM - - 
+2023-01-27 16:55:35.3665|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:55:35.3665|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:55:35.3665|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /MockSchoolManagement.styles.css was not modified 
+2023-01-27 16:55:35.3842|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 17.5198ms 
+2023-01-27 16:55:35.4171|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/MockSchoolManagement.styles.css?v=PjATaM4Eo76Np-LRxt6kFa1HCcTOr1AiwSntM6jfHYM - - - 304 - text/css 67.3763ms 
+2023-01-27 16:55:35.4520|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.5805ms 
+2023-01-27 16:55:38.9455|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 POST http://localhost:13800/Account/Login?ReturnUrl=%2F application/x-www-form-urlencoded 245 
+2023-01-27 16:55:39.0053|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:55:39.0411|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MockSchoolManagement.ViewModels.LoginViewModel, System.String) on controller MockSchoolManagement.Controllers.AccountController (MockSchoolManagement). 
+2023-01-27 16:55:39.3821|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:55:40.6178|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (53ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0 
+2023-01-27 16:55:40.9509|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (15ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+2023-01-27 16:55:41.1308|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0 
+2023-01-27 16:55:41.3161|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (47ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0 
+2023-01-27 16:55:41.4942|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (20ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0 
+2023-01-27 16:55:41.6118|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (13ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0 
+2023-01-27 16:55:41.7376|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (12ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0 
+2023-01-27 16:55:41.7838|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|INFO|AuthenticationScheme: Identity.Application signed in. 
+2023-01-27 16:55:41.8133|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 2422.643ms. 
+2023-01-27 16:55:41.8337|Microsoft.AspNetCore.Mvc.Infrastructure.LocalRedirectResultExecutor|INFO|Executing LocalRedirectResult, redirecting to /. 
+2023-01-27 16:55:41.8550|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) in 2751.1669ms 
+2023-01-27 16:55:41.8720|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:55:41.8953|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 POST http://localhost:13800/Account/Login?ReturnUrl=%2F application/x-www-form-urlencoded 245 - 302 - - 2949.7751ms 
+2023-01-27 16:55:41.9224|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/ - - 
+2023-01-27 16:55:41.9720|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:55:41.9720|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:55:42.0629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:55:42.0839|MockSchoolManagement.DataRepositories.SQLStudentRepository|INFO|学生信息 信息(Information) Log 
+2023-01-27 16:55:42.0839|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-27 16:55:42.1043|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-27 16:55:42.1136|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-27 16:55:42.1341|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 62.2541ms. 
+2023-01-27 16:55:42.1438|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2023-01-27 16:55:42.2683|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s] 
+2023-01-27 16:55:43.0848|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 941.0307ms. 
+2023-01-27 16:55:43.0989|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) in 1071.641ms 
+2023-01-27 16:55:43.1156|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:55:43.1450|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/ - - - 200 - text/html;+charset=utf-8 1233.3252ms 
+2023-01-27 16:55:43.2010|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png?v=Kfghq_Gn2vQ5z_fnXzFmmUh3-5_2MfE_leJX9rViNiM - - 
+2023-01-27 16:55:43.2189|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:55:43.2189|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:55:43.2322|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 13.1263ms 
+2023-01-27 16:55:43.2444|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|Sending file. Request path: '/images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png'. Physical path: 'E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\wwwroot\images\avatars\cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png' 
+2023-01-27 16:55:43.2529|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png?v=Kfghq_Gn2vQ5z_fnXzFmmUh3-5_2MfE_leJX9rViNiM - - - 200 67208 image/png 51.8670ms 
+2023-01-27 16:55:43.2529|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.1684ms 
+2023-01-27 16:55:45.0299|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/home/edit/1 - - 
+2023-01-27 16:55:45.1125|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement)' 
+2023-01-27 16:55:45.1125|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Edit", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ViewResult Edit(Int32) on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:55:45.3014|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:55:45.4116|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0 
+2023-01-27 16:55:45.4972|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 185.0072ms. 
+2023-01-27 16:55:45.5059|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Edit. 
+2023-01-27 16:55:45.9607|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Edit executed in 454.7814ms. 
+2023-01-27 16:55:45.9770|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement) in 781.6743ms 
+2023-01-27 16:55:45.9928|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement)' 
+2023-01-27 16:55:46.0365|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/home/edit/1 - - - 200 - text/html;+charset=utf-8 1006.5337ms 
+2023-01-27 16:55:46.0733|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:55:46.0733|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:55:46.0929|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.4049ms 
+2023-01-27 16:55:46.1174|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.0367ms 
+2023-01-27 16:55:57.7604|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|INFO|User profile is available. Using 'C:\Users\anson\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-01-27 16:55:57.9449|Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2023-01-27 16:55:57.9449|Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2023-01-27 16:55:57.9583|Microsoft.Hosting.Lifetime|INFO|Content root path: E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement 
+2023-01-27 16:55:57.9793|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/ - - 
+2023-01-27 16:55:58.1741|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:55:58.1741|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:55:58.3024|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:55:58.3231|MockSchoolManagement.DataRepositories.SQLStudentRepository|INFO|学生信息 信息(Information) Log 
+2023-01-27 16:55:58.3319|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-27 16:55:58.3319|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-27 16:55:58.3503|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-27 16:55:58.3617|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 47.349ms. 
+2023-01-27 16:55:58.3893|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2023-01-27 16:55:59.3026|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s] 
+2023-01-27 16:56:00.2309|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 1856.903ms. 
+2023-01-27 16:56:00.2499|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) in 2004.9671ms 
+2023-01-27 16:56:00.2693|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:56:00.3358|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/ - - - 200 - text/html;+charset=utf-8 2357.1497ms 
+2023-01-27 16:56:00.4164|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:56:00.4164|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:56:00.4360|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 18.9906ms 
+2023-01-27 16:56:00.4636|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.1462ms 
+2023-01-27 16:56:04.7309|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/ - - 
+2023-01-27 16:56:04.7867|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:56:04.7867|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:56:04.8323|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|INFO|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-01-27 16:56:04.8492|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'. 
+2023-01-27 16:56:04.8808|Microsoft.AspNetCore.Mvc.ChallengeResult|INFO|Executing ChallengeResult with authentication schemes (). 
+2023-01-27 16:56:04.8946|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|INFO|AuthenticationScheme: Identity.Application was challenged. 
+2023-01-27 16:56:04.9087|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) in 69.4235ms 
+2023-01-27 16:56:04.9087|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:56:04.9296|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/ - - - 302 - - 198.7792ms 
+2023-01-27 16:56:04.9296|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/Account/Login?ReturnUrl=%2F - - 
+2023-01-27 16:56:04.9764|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:56:04.9931|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller MockSchoolManagement.Controllers.AccountController (MockSchoolManagement). 
+2023-01-27 16:56:05.0840|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:56:05.1012|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.277ms. 
+2023-01-27 16:56:05.1152|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Login. 
+2023-01-27 16:56:05.4912|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Login executed in 376.0364ms. 
+2023-01-27 16:56:05.5032|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) in 450.4866ms 
+2023-01-27 16:56:05.5271|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:56:05.5743|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 636.1281ms 
+2023-01-27 16:56:05.6124|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/MockSchoolManagement.styles.css?v=PjATaM4Eo76Np-LRxt6kFa1HCcTOr1AiwSntM6jfHYM - - 
+2023-01-27 16:56:05.6124|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:56:05.6124|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:56:05.6377|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 25.0165ms 
+2023-01-27 16:56:05.6546|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /MockSchoolManagement.styles.css was not modified 
+2023-01-27 16:56:05.6639|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/MockSchoolManagement.styles.css?v=PjATaM4Eo76Np-LRxt6kFa1HCcTOr1AiwSntM6jfHYM - - - 304 - text/css 59.8701ms 
+2023-01-27 16:56:05.6858|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.6485ms 
+2023-01-27 16:56:07.3256|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 POST http://localhost:13800/Account/Login?ReturnUrl=%2F application/x-www-form-urlencoded 245 
+2023-01-27 16:56:07.3684|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:56:07.3935|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(MockSchoolManagement.ViewModels.LoginViewModel, System.String) on controller MockSchoolManagement.Controllers.AccountController (MockSchoolManagement). 
+2023-01-27 16:56:07.6839|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:56:07.8897|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (35ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0 
+2023-01-27 16:56:08.1819|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (15ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+2023-01-27 16:56:08.3620|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0 
+2023-01-27 16:56:08.5196|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (14ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0 
+2023-01-27 16:56:08.6753|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (11ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0 
+2023-01-27 16:56:08.8415|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (14ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0 
+2023-01-27 16:56:08.9594|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (11ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0 
+2023-01-27 16:56:09.0033|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|INFO|AuthenticationScheme: Identity.Application signed in. 
+2023-01-27 16:56:09.0189|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 1325.6167ms. 
+2023-01-27 16:56:09.0394|Microsoft.AspNetCore.Mvc.Infrastructure.LocalRedirectResultExecutor|INFO|Executing LocalRedirectResult, redirecting to /. 
+2023-01-27 16:56:09.0629|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement) in 1617.0584ms 
+2023-01-27 16:56:09.0814|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.AccountController.Login (MockSchoolManagement)' 
+2023-01-27 16:56:09.1021|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 POST http://localhost:13800/Account/Login?ReturnUrl=%2F application/x-www-form-urlencoded 245 - 302 - - 1776.5559ms 
+2023-01-27 16:56:09.1021|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/ - - 
+2023-01-27 16:56:09.1922|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:56:09.1922|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:56:09.2684|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:56:09.2911|MockSchoolManagement.DataRepositories.SQLStudentRepository|INFO|学生信息 信息(Information) Log 
+2023-01-27 16:56:09.3076|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-01-27 16:56:09.3164|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-01-27 16:56:09.3164|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-01-27 16:56:09.3343|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 43.2993ms. 
+2023-01-27 16:56:09.3477|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Index. 
+2023-01-27 16:56:09.4427|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s] 
+2023-01-27 16:56:10.1996|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Index executed in 852.0873ms. 
+2023-01-27 16:56:10.2177|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement) in 967.7411ms 
+2023-01-27 16:56:10.2343|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Index (MockSchoolManagement)' 
+2023-01-27 16:56:10.2732|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png?v=Kfghq_Gn2vQ5z_fnXzFmmUh3-5_2MfE_leJX9rViNiM - - 
+2023-01-27 16:56:10.2732|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:56:10.2732|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/ - - - 200 - text/html;+charset=utf-8 1173.6948ms 
+2023-01-27 16:56:10.2881|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:56:10.2881|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|INFO|The file /images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png was not modified 
+2023-01-27 16:56:10.3166|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 28.1845ms 
+2023-01-27 16:56:10.3446|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.5495ms 
+2023-01-27 16:56:10.3549|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/images/avatars/cd0b6263-d60a-4ac7-bcec-49eebd3a0ea6_noimage.png?v=Kfghq_Gn2vQ5z_fnXzFmmUh3-5_2MfE_leJX9rViNiM - - - 304 - image/png 81.7706ms 
+2023-01-27 16:56:11.7485|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/home/edit/1 - - 
+2023-01-27 16:56:11.8047|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executing endpoint 'MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement)' 
+2023-01-27 16:56:11.8184|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Route matched with {action = "Edit", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ViewResult Edit(Int32) on controller MockSchoolManagement.Controllers.HomeController (MockSchoolManagement). 
+2023-01-27 16:56:11.9583|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executing action method MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement) - Validation state: Valid 
+2023-01-27 16:56:12.0537|Microsoft.EntityFrameworkCore.Database.Command|INFO|Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Email], [s].[Major], [s].[Name], [s].[PhotoPath]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__p_0 
+2023-01-27 16:56:12.1308|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action method MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement), returned result Microsoft.AspNetCore.Mvc.ViewResult in 163.2462ms. 
+2023-01-27 16:56:12.1518|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executing ViewResult, running view Edit. 
+2023-01-27 16:56:12.6518|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|INFO|Executed ViewResult - view Edit executed in 511.164ms. 
+2023-01-27 16:56:12.6660|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|INFO|Executed action MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement) in 798.2962ms 
+2023-01-27 16:56:12.6821|Microsoft.AspNetCore.Routing.EndpointMiddleware|INFO|Executed endpoint 'MockSchoolManagement.Controllers.HomeController.Edit (MockSchoolManagement)' 
+2023-01-27 16:56:12.7210|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - 
+2023-01-27 16:56:12.7210|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/home/edit/1 - - - 200 - text/html;+charset=utf-8 973.8555ms 
+2023-01-27 16:56:12.7527|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.6529ms 
+2023-01-27 16:56:12.7527|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request starting HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - 
+2023-01-27 16:56:12.7714|Microsoft.AspNetCore.Hosting.Diagnostics|INFO|Request finished HTTP/1.1 GET http://localhost:13800/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 11.4458ms 

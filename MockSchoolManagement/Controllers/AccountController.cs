@@ -38,6 +38,10 @@ namespace MockSchoolManagement.Controllers
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password);
                 if (result.Succeeded)
                 {
+                    if (_signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    {
+                        return RedirectToAction("ListUsers", "Admin");
+                    }
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Index", "Home");
                 }
@@ -90,8 +94,15 @@ namespace MockSchoolManagement.Controllers
             return View(loginViewModel);
         }
 
-        [AcceptVerbs("Get", "Post")]
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
 
+
+        [AcceptVerbs("Get", "Post")]
+        
         public async Task<IActionResult> IsEmailInUse(string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
@@ -104,6 +115,8 @@ namespace MockSchoolManagement.Controllers
                 return Json($"邮箱：{email}已经被注册使用了");
             }
         }
+
+        
 
     }
 }

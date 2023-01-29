@@ -69,8 +69,10 @@ namespace MockSchoolManagement.Controllers
             //判断学生信息是否存在
             if (student == null)
             {
-                Response.StatusCode = 404;
-                return View("StudentNotFound", id);
+                //Response.StatusCode = 404;
+                ViewBag.ErrorMessage = $"学生Id={id}的信息不存在，请重试！";
+                //return View("StudentNotFound", id);
+                return View("NotFound");
             }
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
@@ -140,19 +142,22 @@ namespace MockSchoolManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(StudentEditViewModel studentEditViewModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 Student student = _studentRepository.GetStudentById(studentEditViewModel.Id);
                 student.Name = studentEditViewModel.Name;
                 student.Email = studentEditViewModel.Email;
                 student.Major = studentEditViewModel.Major;
 
-                if (studentEditViewModel.Photos.Count > 0)
+                if (studentEditViewModel.Photos?.Count > 0)
                 {
                     if (studentEditViewModel.ExistingPhotoPath != null)
                     {
                         string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "images", "avatars", studentEditViewModel.ExistingPhotoPath);
-                        System.IO.File.Delete(filePath);
+                        if (System.IO.File.Exists(filePath))
+                        {
+                            System.IO.File.Delete(filePath);
+                        }
                     }
                     student.PhotoPath = await ProcessUploadedFile(studentEditViewModel);
 

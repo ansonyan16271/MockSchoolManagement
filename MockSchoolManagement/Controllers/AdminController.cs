@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using MockSchoolManagement.Models;
@@ -7,6 +8,7 @@ using MockSchoolManagement.ViewModels;
 
 namespace MockSchoolManagement.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -17,7 +19,7 @@ namespace MockSchoolManagement.Controllers
             _roleManager = roleManager;
             _userManager = userManager;
         }
-
+        #region 角色管理
         [HttpGet]
         public IActionResult CreateRole()
         {
@@ -111,6 +113,34 @@ namespace MockSchoolManagement.Controllers
             }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> DedleteRole(string roleId)
+        {
+            var role = await _roleManager.FindByIdAsync(roleId);
+
+            if (role == null)
+            {
+                ViewBag.ErrorMessage = $"无法找到ID为{roleId}的角色信息！";
+                return View("NotFound");
+            }
+            else
+            {
+                var result = await _roleManager.DeleteAsync(role);
+
+                if(result.Succeeded)
+                {
+                    return RedirectToAction("ListRoles");
+                }
+                foreach(var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View("ListRoles");
+            }
+        }
+        #endregion
+
+        #region 角色中的用户
         [HttpGet]
         public async Task<IActionResult> EditUsersInRole(string roleId)
         {
@@ -181,5 +211,112 @@ namespace MockSchoolManagement.Controllers
             }
             return RedirectToAction("EditRole", new { Id = roleId });
         }
+        #endregion
+
+        #region 用户管理
+        [HttpGet]
+        public IActionResult ListUsers()
+        {
+            var users = _userManager.Users.ToList();
+            return View(users);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditUser(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"无法找到ID为{id}的用户";
+                return View("NotFound");
+            }
+
+            var userClaims = await _userManager.GetClaimsAsync(user);
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            var model = new EditUserViewModel
+            {
+                Id = user.Id,
+                Email = user.Email,
+                UserName = user.UserName,
+                City = user.City,
+                Claims = userClaims.Select(c => c.Value).ToList(),
+                Roles = (List<string>)userRoles
+            };
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> EditUser(EditUserViewModel model)
+        {
+            var user = await _userManager.FindByIdAsync(model.Id);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"无法找到ID为{model.Id}的用户";
+                return View("NotFound");
+            }
+            else
+            {
+                user.Email = model.Email;
+                user.UserName = model.UserName;
+                user.City = model.City;
+
+                var result = await _userManager.UpdateAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("ListUsers");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"无法找到ID为{id}的用户！";
+                return View("NotFound");
+            }
+            else
+            {
+                var result = await _userManager.DeleteAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("ListUsers");
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View("ListUsers");
+            }
+
+        }
+        #endregion
+
+
+
+        #region 拒绝访问
+        //[HttpGet]
+        //[AllowAnonymous]
+        //public IActionResult AccessDenied()
+        //{
+        //    return View();
+        //}
+        #endregion
+
     }
 }

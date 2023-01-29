@@ -10,7 +10,7 @@ namespace MockSchoolManagement.ViewModels
         [EmailAddress]
         [Display(Name ="邮箱地址")]
         [Remote(action: "IsEmailInUse", controller:"Account")]
-        [ValidEmailDomain(allowedDomain:"163.com",ErrorMessage ="邮箱地址的后缀必须是163.com")]
+        //[ValidEmailDomain(allowedDomain:"163.com",ErrorMessage ="邮箱地址的后缀必须是163.com")]
         public string Email { get; set; }
         [Required]
         [Display(Name ="城市")]

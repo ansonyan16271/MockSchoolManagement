@@ -98,9 +98,11 @@ namespace MockSchoolManagement
             app.UseStaticFiles();
 
             app.UseAuthentication();
-            app.UseAuthorization();
+            
 
             app.UseRouting();
+
+            app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
