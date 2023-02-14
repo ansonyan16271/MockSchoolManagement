@@ -16,6 +16,14 @@ namespace MockSchoolManagement.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Seed();
+
+            //获取当前系统中所有领域模型上的外键列表
+            var foreignKeys = modelBuilder.Model.GetEntityTypes().SelectMany(e=>e.GetForeignKeys());
+
+            foreach (var foreignKey in foreignKeys)
+            {
+                foreignKey.DeleteBehavior = DeleteBehavior.Restrict;
+            }
         }
     }
 }

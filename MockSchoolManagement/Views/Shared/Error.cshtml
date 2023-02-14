@@ -23,12 +23,20 @@
     For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
     and restarting the app.
 </p>*@
-
-<h3>
+@if (ViewBag.ErrorTitle == null)
+{
+    <h3 class="text-danger">
     程序请求时发生了一个内部错误，我们会反馈给团队，我们正在努力解决这个问题。
-</h3>
-<h5>请通过 ltm@ddxc.org 与我们取得联系</h5>
-<hr />
+    </h3>
+    <h5 class="Text-info">请通过 ltm@ddxc.org 与我们取得联系</h5>
+    <hr />
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}
+
 @*<h3>错误信息：</h3>
 <div class="alert alert-danger">
     <h5>异常路径：</h5>

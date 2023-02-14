@@ -1,0 +1,258 @@
+2023-02-07 17:02:34.2051|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-02-07 17:02:34.2168|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-02-07 17:02:34.2168|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-02-07 17:02:35.5581|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-02-07 17:02:35.5581|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-02-07 17:02:35.5802|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|WARN|The response has already started, the error handler will not be executed. 
+2023-02-07 17:02:35.5802|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|WARN|The response has already started, the error handler will not be executed. 
+2023-02-07 17:02:35.5987|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-07 17:02:35.5987|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-07 17:02:35.6148|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|WARN|The response has already started, the error page middleware will not be executed. 
+2023-02-07 17:02:35.6215|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|WARN|The response has already started, the error page middleware will not be executed. 
+2023-02-07 17:02:35.6215|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "18230571326760812545", Request ID "40000002-0008-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-02-07 17:02:35.6215|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|ERROR|Connection ID "18302628903618871315", Request ID "40000019-0004-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2023-02-07 17:02:46.7323|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-02-07 17:02:46.7516|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-02-07 17:02:46.7621|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-02-07 17:02:48.7958|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-02-07 17:02:48.8811|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-02-07 17:02:48.9005|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|WARN|The response has already started, the error handler will not be executed. 
+2023-02-07 17:02:48.9263|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|WARN|The response has already started, the error handler will not be executed. 
+2023-02-07 17:02:48.9366|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-07 17:02:48.9796|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-07 17:02:48.9949|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|WARN|The response has already started, the error page middleware will not be executed. 
+2023-02-07 17:02:49.0111|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|WARN|The response has already started, the error page middleware will not be executed. 
+2023-02-07 17:02:49.0111|Microsoft.AspNetCore.Server.Kestrel|ERROR|Connection id "0HMO8T8A6M36O", Request id "0HMO8T8A6M36O:00000001": An unhandled exception was thrown by the application. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-02-07 17:02:49.0536|Microsoft.AspNetCore.Server.Kestrel|ERROR|Connection id "0HMO8T8A6M36P", Request id "0HMO8T8A6M36P:00000001": An unhandled exception was thrown by the application. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-02-07 17:03:21.6987|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-02-07 17:03:21.6987|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-02-07 17:03:21.7216|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 
+2023-02-07 17:03:24.0731|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-02-07 17:03:24.1226|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|WARN|The response has already started, the error handler will not be executed. 
+2023-02-07 17:03:24.0731|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-02-07 17:03:24.1674|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-07 17:03:24.1804|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|WARN|The response has already started, the error handler will not be executed. 
+2023-02-07 17:03:24.2169|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|WARN|The response has already started, the error page middleware will not be executed. 
+2023-02-07 17:03:24.2169|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-02-07 17:03:24.2390|Microsoft.AspNetCore.Server.Kestrel|ERROR|Connection id "0HMO8T8KJVN35", Request id "0HMO8T8KJVN35:00000001": An unhandled exception was thrown by the application. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-02-07 17:03:24.2492|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|WARN|The response has already started, the error page middleware will not be executed. 
+2023-02-07 17:03:24.2896|Microsoft.AspNetCore.Server.Kestrel|ERROR|Connection id "0HMO8T8KJVN36", Request id "0HMO8T8KJVN36:00000001": An unhandled exception was thrown by the application. System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ApplyResponseHeaders(Int32 statusCode)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.ServeStaticFile(HttpContext context, RequestDelegate next)
+   at MockSchoolManagement.Program.<>c.<<Main>b__0_3>d.MoveNext() in E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\Program.cs:line 115
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-02-07 17:03:53.8128|MockSchoolManagement.DataRepositories.SQLStudentRepository|WARN|学生信息 警告(Warning) Log 
+2023-02-07 17:03:53.8222|MockSchoolManagement.DataRepositories.SQLStudentRepository|ERROR|学生信息 错误(Error) Log 
+2023-02-07 17:03:53.8222|MockSchoolManagement.DataRepositories.SQLStudentRepository|FATAL|学生信息 严重(Critical) Log 

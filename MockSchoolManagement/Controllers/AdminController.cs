@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
 using MockSchoolManagement.Models;
 using MockSchoolManagement.ViewModels;
 
@@ -13,11 +14,13 @@ namespace MockSchoolManagement.Controllers
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ILogger<AdminController> _logger;
 
-        public AdminController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager)
+        public AdminController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager, ILogger<AdminController> logger)
         {
             _roleManager = roleManager;
             _userManager = userManager;
+            _logger = logger;
         }
         #region 角色管理
         [HttpGet]
@@ -114,28 +117,46 @@ namespace MockSchoolManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DedleteRole(string roleId)
+        public async Task<IActionResult> DeleteRole(string roleid)
         {
-            var role = await _roleManager.FindByIdAsync(roleId);
+            var role = await _roleManager.FindByIdAsync(roleid);
 
             if (role == null)
             {
-                ViewBag.ErrorMessage = $"无法找到ID为{roleId}的角色信息！";
+                ViewBag.ErrorMessage = $"无法找到ID为{roleid}的角色信息";
                 return View("NotFound");
             }
             else
             {
-                var result = await _roleManager.DeleteAsync(role);
+                //将代码包装在trycatch中。
+                try
+                {
+                    var result = await _roleManager.DeleteAsync(role);
 
-                if(result.Succeeded)
-                {
-                    return RedirectToAction("ListRoles");
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("ListRoles");
+                    }
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+
+                    return View("ListRoles");
+
                 }
-                foreach(var error in result.Errors)
+                ///如果触发的异常是DbUpdateException，我们知道我们无法删除角色，
+                ///因为该角色中已存在用户信息
+                catch (DbUpdateException ex)
                 {
-                    ModelState.AddModelError("", error.Description);
+                    //将异常记录到文件中。我们之前已经学习了使用Nlog配置我们的日志信息
+                    _logger.LogError($"发生异常 : {ex}");
+                    //我们使用ViewBag.ErrorTitle和 ViewBag.ErrorMessage来传递错误标题和详情信息到我们的Error视图。
+                    //Error视图会将这些数据显示给用户                    
+                    ViewBag.ErrorTitle = $"角色：{role.Name} 正在被使用中...";
+                    ViewBag.ErrorMessage = $" 无法删除{role.Name}角色，因为此角色中已经存在用户。如果您想删除此角色，需要先从该角色中删除用户，然后尝试删除该角色本身。";
+                    return View("Error");
                 }
-                return View("ListRoles");
             }
         }
         #endregion

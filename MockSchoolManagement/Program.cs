@@ -24,12 +24,11 @@ namespace MockSchoolManagement
             options.UseSqlServer(builder.Configuration["ConnectionStrings:MockStudentDBConnection"]));
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews(config=>
+            builder.Services.AddControllersWithViews(config =>
             {
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 config.Filters.Add(new AuthorizeFilter(policy));
-            })
-                .AddXmlSerializerFormatters();
+            }).AddXmlSerializerFormatters();
             //builder.Services.AddScoped<IStudentRepository,MockStudentRepository>();
             builder.Services.AddScoped<IStudentRepository, SQLStudentRepository>();
 
@@ -87,18 +86,78 @@ namespace MockSchoolManagement
                 //app.UseStatusCodePagesWithRedirects("/Error/{0}");
                 app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
+            #region 配置静态文件
+            //DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
+            //defaultFilesOptions.DefaultFileNames.Clear();
+            ////defaultFilesOptions.DefaultFileNames.Add("default.html");
 
-            //app.UseDefaultFiles(new DefaultFilesOptions()
+            //app.UseDefaultFiles("/default.html");//new DefaultFilesOptions()
             //{
-            //    DefaultFileNames = new[] { "default.html","52abp.html" }
+            //    DefaultFileNames = new[] { "default.html", "52abp.html"}
             //});
 
+
+            //FileServerOptions fileServerOptions = new FileServerOptions();
+            //fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
+            //fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("52abp.html");
             //app.UseFileServer("/52abp.html");
+            #endregion
+
+            #region 装配中间件
+            //app.UseMiddleware<>();
+            #endregion
+
+            #region 使用Use注册中间件
+            {
+                //app.Use(async (context, next) =>  //使用Use注册中间件
+                //{
+                //    await context.Response.WriteAsync("<h1>Hello World!</h1>");
+                //    await next();
+                //});
+
+                //app.Map("/Api/GetData", async context =>  //使用Use注册中间件
+                //{
+                //    await context.Response.WriteAsync("Hello World!");
+
+                //});
+
+                //app.MapGet("", async context =>  //使用Use注册中间件
+                //{
+                //    await context.Response.WriteAsync("Hello World!");
+
+                //});
+
+                //app.MapWhen(context =>
+                //{
+                //    string queryString = context.Request.QueryString.Value;
+                //    return queryString.Contains("Anson");
+                //}, appBuilder =>
+                //{
+                //    appBuilder.Use(async (appcontext, next) =>
+                //    {
+                //        await appcontext.Response.WriteAsync("Hello World!");
+                //        await next();
+                //    });
+                //});
+
+                //app.UseWhen(context =>
+                //{
+                //    string queryString = context.Request.QueryString.Value;
+                //    return queryString.Contains("Anson");
+                //}, appBuilder =>
+                //{
+                //    appBuilder.Use(async (appcontext, next) =>
+                //    {
+                //        await appcontext.Response.WriteAsync("Hello World!");
+                //        await next();
+                //    });
+                //});
+            }
+            #endregion
 
             app.UseStaticFiles();
 
             app.UseAuthentication();
-            
 
             app.UseRouting();
 
@@ -107,11 +166,9 @@ namespace MockSchoolManagement
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-            //app.Use(async (context, next) =>  //使用Use注册中间件
-            //{
-            //    context.Response.WriteAsync("Hello World!");
-            //    await next();
-            //});
+
+            
+
             app.Run();
         }
     }

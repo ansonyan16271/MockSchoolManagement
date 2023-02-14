@@ -33,6 +33,7 @@ namespace MockSchoolManagement.Controllers
                 {
                     UserName = registerViewModel.Email,
                     Email = registerViewModel.Email,
+
                     City = registerViewModel.City,
                 };
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password);
