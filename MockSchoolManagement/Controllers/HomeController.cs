@@ -126,7 +126,7 @@ namespace MockSchoolManagement.Controllers
             if (student == null)
             {
                 Response.StatusCode = 404;
-                return View("StudentNotFound", id);
+                return View("NotFound");
             }
             StudentEditViewModel studentEditViewModel = new StudentEditViewModel
             {

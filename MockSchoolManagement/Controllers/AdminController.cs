@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using MockSchoolManagement.Models;
 using MockSchoolManagement.ViewModels;
-
+using System.Security.Claims;
 
 namespace MockSchoolManagement.Controllers
 {
@@ -345,7 +345,7 @@ namespace MockSchoolManagement.Controllers
             var model = new List<RolesInUserViewModel>();
 
             var roles = await _roleManager.Roles.ToListAsync();
-            foreach(var role in roles)
+            foreach (var role in roles)
             {
                 var rolesInUserViewModel = new RolesInUserViewModel
                 {
@@ -353,13 +353,13 @@ namespace MockSchoolManagement.Controllers
                     RoleName = role.Name
                 };
                 //判断当前用户是否已经拥有该角色信息
-                if(await _userManager.IsInRoleAsync(user,role.Name))
+                if (await _userManager.IsInRoleAsync(user, role.Name))
                 {
-                    rolesInUserViewModel.IsSelected= true;
+                    rolesInUserViewModel.IsSelected = true;
                 }
                 else
                 {
-                    rolesInUserViewModel.IsSelected= false;
+                    rolesInUserViewModel.IsSelected = false;
                 }
                 model.Add(rolesInUserViewModel);
             }
@@ -367,7 +367,7 @@ namespace MockSchoolManagement.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ManageUserRoles(List<RolesInUserViewModel> model,string userId)
+        public async Task<IActionResult> ManageUserRoles(List<RolesInUserViewModel> model, string userId)
         {
             var user = await _userManager.FindByIdAsync(userId);
 
@@ -380,7 +380,7 @@ namespace MockSchoolManagement.Controllers
             var roles = await _userManager.GetRolesAsync(user);
 
             //移除当前用户中的所有角色信息
-            var result = await _userManager.RemoveFromRolesAsync(user,roles);
+            var result = await _userManager.RemoveFromRolesAsync(user, roles);
 
             if (!result.Succeeded)
             {
@@ -388,16 +388,91 @@ namespace MockSchoolManagement.Controllers
                 return View(model);
             }
             //查询出模型列表中被选中的rolename添加到用户中。
-            result = await _userManager.AddToRolesAsync(user,model.Where(x => x.IsSelected).Select(y => y.RoleName));
+            result = await _userManager.AddToRolesAsync(user, model.Where(x => x.IsSelected).Select(y => y.RoleName));
 
-            if(!result.Succeeded)
+            if (!result.Succeeded)
             {
                 ModelState.AddModelError("", "无法向用户添加选定的角色");
                 return View(model);
             }
             return RedirectToAction("EditUser", new { Id = userId });
-            
+
         }
+        #endregion
+
+        #region 管理用户声明
+        [HttpGet]
+        public async Task<IActionResult> ManageUserClaims(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"无法找到ID为{userId}的用户";
+                return View("NotFound");
+            }
+
+            // UserManager服务中的GetClaimsAsync方法获取用户当前的所有声明
+            var existingUserClaims = await _userManager.GetClaimsAsync(user);
+
+            var model = new UserClaimsViewModel
+            {
+                UserId = userId,
+            };
+
+            // 循环遍历应用程序中的每个声明
+            foreach (Claim claim in ClaimsStore.AllClaims)
+            {
+                UserClaim userClaim = new UserClaim
+                {
+                    ClaimType = claim.Type,
+                };
+
+                // 如果用户选中了声明属性，设置IsSelected属性为true，
+                if (existingUserClaims.Any(c => c.Type == claim.Type))
+                {
+                    userClaim.IsSelected = true;
+                }
+
+                model.Claims.Add(userClaim);
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ManageUserClaims(UserClaimsViewModel model)
+        {
+            var user = await _userManager.FindByIdAsync(model.UserId);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"无法找到ID为{model.UserId}的用户";
+                return View("NotFound");
+            }
+
+            //获取所有用户现有的声明并删除它们
+            var claims = await _userManager.GetClaimsAsync(user);
+            var result = await _userManager.RemoveClaimsAsync(user, claims);
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "无法删除当前用户的声明");
+                return View(model);
+            }
+
+            // 添加界面上选中的所有声明信息
+            result = await _userManager.AddClaimsAsync(user, model.Claims.Where(c => c.IsSelected).Select(c => new Claim(c.ClaimType, c.ClaimType)));
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "无法向用户添加选定的声明");
+                return View(model);
+            }
+
+            return RedirectToAction("EditUser",new {Id = model.UserId});
+        }
+
         #endregion
 
         #region 拒绝访问
