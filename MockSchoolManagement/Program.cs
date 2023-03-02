@@ -86,6 +86,7 @@ namespace MockSchoolManagement
                 //app.UseStatusCodePagesWithRedirects("/Error/{0}");
                 app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
+            //app.UseHsts(); //Https严格传输安全协议
             #region 配置静态文件
             //DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
             //defaultFilesOptions.DefaultFileNames.Clear();
@@ -101,6 +102,7 @@ namespace MockSchoolManagement
             //fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
             //fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("52abp.html");
             //app.UseFileServer("/52abp.html");
+            app.UseStaticFiles();
             #endregion
 
             #region 装配中间件
