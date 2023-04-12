@@ -9,7 +9,7 @@ namespace MockSchoolManagement.Models
             new Claim("Create Role", "Create Role"),
             new Claim("Edit Role","Edit Role"),
             new Claim("Delete Role","Delete Role"),
-            new Claim("EditStudent","EditStudent")
+            new Claim("Edit Student","Edit Student")
         };
     }
 }

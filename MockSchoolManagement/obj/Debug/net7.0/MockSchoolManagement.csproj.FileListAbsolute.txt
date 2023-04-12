@@ -293,3 +293,4 @@ E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\bin\Debug
 E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Asp.Net Core\GitWorkSpace\MockSchoolManagement\MockSchoolManagement\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

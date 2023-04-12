@@ -8,6 +8,7 @@ using MockSchoolManagement.CustomerMiddlewares;
 using MockSchoolManagement.DataRepositories;
 using MockSchoolManagement.Infrastructure;
 using MockSchoolManagement.Models;
+using MockSchoolManagement.Security;
 using NLog.Web;
 
 namespace MockSchoolManagement
@@ -20,7 +21,7 @@ namespace MockSchoolManagement
 
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContextPool<AppDbContext>(options =>
+            builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(builder.Configuration["ConnectionStrings:MockStudentDBConnection"]));
 
             // Add services to the container.
@@ -54,6 +55,94 @@ namespace MockSchoolManagement
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddErrorDescriber<CustomIdentityErrorDescriber>()
                .AddEntityFrameworkStores<AppDbContext>();
+
+            // 策略结合声明授权
+            builder.Services.AddAuthorization(options =>
+            {
+                //options.AddPolicy("DeleteRolePolicy",
+                //   policy => policy.RequireClaim("Delete Role"));
+
+                //options.AddPolicy("AdminRolePolicy",
+                //   policy => policy.RequireRole("Admin"));
+
+                ////策略结合多个角色进行授权
+                //options.AddPolicy("SuperAdminPolicy", policy =>
+                //  policy.RequireRole("Admin", "User", "SuperManager"));
+
+                //options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role"));
+                options.AddPolicy("EditRolePolicy", policy => policy.AddRequirements(new ManageAdminRolesAndClaimsRequirement()));
+                //设置返回失败时不调用其他处理程序
+                options.InvokeHandlersAfterFailure = false;
+                //options.AddPolicy("DeleteRolePolicy", policy => policy.RequireClaim("Delete Role"));
+
+                //options.AddPolicy("EditRolePolicy", policy => policy.RequireClaim("Edit Role","true"));
+
+                ////策略结合角色授权
+                //options.AddPolicy("AdminRolePolicy", policy => policy.RequireRole("Admin"));
+
+                ////策略结合多个角色进行授权
+                //options.AddPolicy("SuperAdminPolicy", policy => policy.RequireRole("Admin", "User", "SuperManager"));
+
+                //链式写法
+                //options.AddPolicy("EditRolePolicy", policy => policy
+                //    .RequireRole("Admin")
+                //    .RequireClaim("Edit Role","true")
+                //    .RequireRole("Super Admin")
+                //    );
+
+                ////使用委托自定义策略
+                //options.AddPolicy("EditRolePolicy", policy => policy.RequireAssertion(context =>
+                //    context.User.IsInRole("Admin") &&
+                //    context.User.HasClaim(claim => claim.Type == "Edit Role" && claim.Value == "true") ||
+                //    context.User.IsInRole("Super Admin")));
+
+                //封装
+                //    options.AddPolicy("EditRolePolicy",policy => 
+                //        policy.RequireAssertion(context => AuthorizeAccess(context)))
+
+                //});
+
+                //bool AuthorizeAccess(AuthorizationHandlerContext context)
+                //{
+                //    return context.User.IsInRole("Admin") &&
+                //            context.User.HasClaim(claim => claim.Type == "Edit Role" && claim.Value == "true") ||
+                //            context.User.IsInRole("Super Admin");
+                //}
+                //自定义复杂授权
+                //And关系
+                //options.AddPolicy("EditRolePolicy",policy =>policy
+                //    .RequireClaim("Edit Role","true","yes")
+                //    .RequireRole("Admin"));
+
+                //OR关系
+                //options.AddPolicy("EditRolePolicy",
+                //    policy => policy.RequireAssertion(context =>
+                //    context.User.IsInRole("Admin") &&
+                //    context.User.HasClaim(claim => claim.Type == "Edit Role" && claim.Value == "true") ||
+                //    context.User.IsInRole("Super Admin")));
+
+            });
+            //注册自定义授权处理程序
+            builder.Services.AddSingleton<IAuthorizationHandler,CanEditOnlyOtherAdminRolesAndClaimsHandler>();
+            builder.Services.AddSingleton<IAuthorizationHandler,SuperAdminHandler>();
+            #endregion
+
+            #region 修改MVC中默认Cookie配置信息
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                //修改拒绝访问的路由地址
+                options.AccessDeniedPath = new PathString("/Admin/AccessDenied");
+                //修改登录地址的路由
+                //   options.LoginPath = new PathString("/Admin/Login");  
+                //修改注销地址的路由
+                //   options.LogoutPath = new PathString("/Admin/LogOut");
+                //统一系统全局的Cookie名称
+                options.Cookie.Name = "MockSchoolCookieName";
+                // 登录用户Cookie的有效期 
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+                //是否对Cookie启用滑动过期时间。
+                options.SlidingExpiration = true;
+            });
             #endregion
 
             #region NLog log4net日志
@@ -156,12 +245,9 @@ namespace MockSchoolManagement
                 //});
             }
             #endregion
-
-            app.UseStaticFiles();
+            app.UseRouting();
 
             app.UseAuthentication();
-
-            app.UseRouting();
 
             app.UseAuthorization();
 
@@ -169,7 +255,7 @@ namespace MockSchoolManagement
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            
+
 
             app.Run();
         }

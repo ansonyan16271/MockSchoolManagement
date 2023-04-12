@@ -6,10 +6,10 @@ namespace MockSchoolManagement.ViewModels
 {
     public class EditUserViewModel
     {
-        public EditUserViewModel() 
+        public EditUserViewModel()
         {
-            Claims=new List<string>();
-            Roles=new List<string>();
+            Claims = new List<Claim>();
+            Roles = new List<string>();
         }
 
         public string Id { get; set; }
@@ -23,7 +23,7 @@ namespace MockSchoolManagement.ViewModels
 
         public string City { get; set; }
 
-        public List<string> Claims { get; set; }
-        public List<string> Roles { get; set; }
+        public IList<Claim> Claims { get; set; }
+        public IList<string> Roles { get; set; }
     }
 }

@@ -66,6 +66,7 @@ namespace MockSchoolManagement.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "EditRolePolicy")]
         public async Task<IActionResult> EditRole(string id)
         {
             var role = await _roleManager.FindByIdAsync(id);
@@ -117,6 +118,7 @@ namespace MockSchoolManagement.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "SuperAdminPolicy")]
         public async Task<IActionResult> DeleteRole(string roleid)
         {
             var role = await _roleManager.FindByIdAsync(roleid);
@@ -262,8 +264,9 @@ namespace MockSchoolManagement.Controllers
                 Email = user.Email,
                 UserName = user.UserName,
                 City = user.City,
-                Claims = userClaims.Select(c => c.Value).ToList(),
-                Roles = (List<string>)userRoles
+                Claims = userClaims,//.Select(c => c.Value).ToList(),
+                //Roles = (List<string>)userRoles
+                Roles = userRoles
             };
             return View(model);
         }
@@ -331,6 +334,7 @@ namespace MockSchoolManagement.Controllers
         #region 管理用户中的角色
 
         [HttpGet]
+        [Authorize(Policy = "EditRolePolicy")]
         public async Task<IActionResult> ManageUserRoles(string userId)
         {
             ViewBag.UserId = userId;
@@ -462,7 +466,9 @@ namespace MockSchoolManagement.Controllers
             }
 
             // 添加界面上选中的所有声明信息
-            result = await _userManager.AddClaimsAsync(user, model.Claims.Where(c => c.IsSelected).Select(c => new Claim(c.ClaimType, c.ClaimType)));
+            //result = await _userManager.AddClaimsAsync(user, model.Claims.Where(c => c.IsSelected).Select(c => new Claim(c.ClaimType, c.ClaimType)));
+
+            result = await _userManager.AddClaimsAsync(user, model.Claims.Select(c => new Claim(c.ClaimType, c.IsSelected ? "true" : "false")));
 
             if (!result.Succeeded)
             {
@@ -470,18 +476,18 @@ namespace MockSchoolManagement.Controllers
                 return View(model);
             }
 
-            return RedirectToAction("EditUser",new {Id = model.UserId});
+            return RedirectToAction("EditUser", new { Id = model.UserId });
         }
 
         #endregion
 
         #region 拒绝访问
-        //[HttpGet]
-        //[AllowAnonymous]
-        //public IActionResult AccessDenied()
-        //{
-        //    return View();
-        //}
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
         #endregion
 
     }

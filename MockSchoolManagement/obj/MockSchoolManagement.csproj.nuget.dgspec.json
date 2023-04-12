@@ -10,7 +10,7 @@
         "projectUniqueName": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement\\MockSchoolManagement.csproj",
         "projectName": "MockSchoolManagement",
         "projectPath": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement\\MockSchoolManagement.csproj",
-        "packagesPath": "C:\\Users\\anson\\.nuget\\packages\\",
+        "packagesPath": "D:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\",
         "outputPath": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -47,17 +47,17 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.4, )"
             },
             "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
               "target": "Package",
@@ -65,7 +65,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.Web.LibraryManager.Build": {
               "target": "Package",
@@ -73,11 +73,11 @@
             },
             "NLog.Database": {
               "target": "Package",
-              "version": "[5.1.1, )"
+              "version": "[5.1.2, )"
             },
             "NLog.Web.AspNetCore": {
               "target": "Package",
-              "version": "[5.2.1, )"
+              "version": "[5.2.2, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

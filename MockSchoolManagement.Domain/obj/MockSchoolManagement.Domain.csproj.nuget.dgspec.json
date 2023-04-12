@@ -10,7 +10,7 @@
         "projectUniqueName": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement.Domain\\MockSchoolManagement.Domain.csproj",
         "projectName": "MockSchoolManagement.Domain",
         "projectPath": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement.Domain\\MockSchoolManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\anson\\.nuget\\packages\\",
+        "packagesPath": "D:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\",
         "outputPath": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

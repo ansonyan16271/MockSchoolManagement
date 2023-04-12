@@ -8,7 +8,7 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\anson\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
     "d:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -17,7 +17,7 @@
       "projectUniqueName": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement.Dal\\MockSchoolManagement.Dal.csproj",
       "projectName": "MockSchoolManagement.Dal",
       "projectPath": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement.Dal\\MockSchoolManagement.Dal.csproj",
-      "packagesPath": "C:\\Users\\anson\\.nuget\\packages\\",
+      "packagesPath": "D:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\",
       "outputPath": "E:\\Asp.Net Core\\GitWorkSpace\\MockSchoolManagement\\MockSchoolManagement.Dal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
