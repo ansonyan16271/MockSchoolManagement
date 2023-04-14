@@ -45,19 +45,27 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AspNet.Security.OAuth.GitHub": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.MicrosoftAccount": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
               "target": "Package",
@@ -65,7 +73,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[7.0.6, )"
             },
             "Microsoft.Web.LibraryManager.Build": {
               "target": "Package",
@@ -73,11 +81,11 @@
             },
             "NLog.Database": {
               "target": "Package",
-              "version": "[5.1.2, )"
+              "version": "[5.1.3, )"
             },
             "NLog.Web.AspNetCore": {
               "target": "Package",
-              "version": "[5.2.2, )"
+              "version": "[5.2.3, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

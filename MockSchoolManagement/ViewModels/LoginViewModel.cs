@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Authentication;
+using System.ComponentModel.DataAnnotations;
 
 namespace MockSchoolManagement.ViewModels
 {
@@ -16,5 +17,10 @@ namespace MockSchoolManagement.ViewModels
 
         [Display(Name = "记住我")]
         public bool RememberMe { get; set; }
+
+        public string? ReturnUrl { get; set; }
+
+        // AuthenticationScheme 的命名空间是 Microsoft.AspNetCore.Authentication
+        public IList<AuthenticationScheme>? ExternalLogins { get; set; }
     }
 }

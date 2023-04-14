@@ -41,6 +41,7 @@ namespace MockSchoolManagement
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
+                options.SignIn.RequireConfirmedEmail = true;
 
             });
             //builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -54,8 +55,22 @@ namespace MockSchoolManagement
             //    .AddEntityFrameworkStores<AppDbContext>();
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddErrorDescriber<CustomIdentityErrorDescriber>()
-               .AddEntityFrameworkStores<AppDbContext>();
-
+               .AddEntityFrameworkStores<AppDbContext>()
+               .AddDefaultTokenProviders();
+            #region Microsoft第三方认证
+            {
+                builder.Services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
+                {
+                    microsoftOptions.ClientId = builder.Configuration["Authentication:Microsoft:ClientId"];
+                    microsoftOptions.ClientSecret = builder.Configuration["Authentication:Microsoft:ClientSecret"];
+                })
+                .AddGitHub(options =>
+                {
+                    options.ClientId = builder.Configuration["Authentication:GitHub:ClientId"];
+                    options.ClientSecret = builder.Configuration["Authentication:GitHub:ClientSecret"];
+                });
+            }
+            #endregion
             // 策略结合声明授权
             builder.Services.AddAuthorization(options =>
             {
@@ -147,13 +162,13 @@ namespace MockSchoolManagement
 
             #region NLog log4net日志
 
-            builder.Logging.ClearProviders();
-            builder.Logging.AddNLog("CfgFile/NLog.config");
+            //builder.Logging.ClearProviders();
+            //builder.Logging.AddNLog("CfgFile/NLog.config");
 
             //Nuget引入：
             //1.Log4Net
             //2.Microsoft.Extensions.Logging.Log4Net.AspNetCore
-            //builder.Logging.AddLog4Net("CfgFile/log4net.Config");
+            builder.Logging.AddLog4Net("CfgFile/log4net.Config");
             #endregion
 
             var app = builder.Build();
