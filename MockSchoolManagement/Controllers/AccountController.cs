@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MockSchoolManagement.Models;
 using MockSchoolManagement.ViewModels;
+using System.Net.Mail;
 using System.Security.Claims;
+using Zhaoxi.Manage.Common.Notice;
 
 namespace MockSchoolManagement.Controllers
 {
@@ -58,10 +60,26 @@ namespace MockSchoolManagement.Controllers
                     {
                         return RedirectToAction("ListUsers", "Admin");
                     }
+                    string emailAddress = user.Email.ToString();
+                    string sendBody = $"<p>请单击下面链接确认邮件。</P><bt><br><a href='{confirmationLink}'>确认邮件地址</a> ";
 
-                    ViewBag.ErrorTitle = "注册成功";
-                    ViewBag.ErrorMessage = $"在你登入系统前,我们已经给您发了一份邮件，需要您先进行邮件验证，点击确认链接即可完成。";
-                    return View("Error");
+                    EMailTool mailTool = new EMailTool(init =>
+                    {
+                        init.Host = "smtp.163.com";
+                        init.EnableSsl = true;
+                        init.Port = 25;
+                        init.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+                        init.Credentials = new System.Net.NetworkCredential("ansonyan16271@163.com", "KNTOKMUWXWBUFNIT");
+                    });
+                   
+                    bool boolResult = mailTool.SendMail("ansonyan16271@163.com","测试",new string[1] { emailAddress },"确认邮件", sendBody, MailPriority.High,isHtml: true);
+                    if(boolResult)
+                    {
+                        ViewBag.ErrorTitle = "注册成功";
+                        ViewBag.ErrorMessage = $"在你登入系统前,我们已经给您发了一份邮件，需要您先进行邮件验证，点击确认链接即可完成。";
+                        return View("Error");
+                    }
+                    
 
                     //await _signInManager.SignInAsync(user, isPersistent: false);
                     //return RedirectToAction("Index", "Home");
